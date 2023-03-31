@@ -375,21 +375,42 @@
         </div>
         <form class="subscribe-form">
             <h2 class="subscribe-text">Subscribe</h2>
-            <label hidden for="subscribe-label">
-                <p class="subscribe-text">Subscribe</p>
-            </label>
-            <input type="email" name="email" class="subscribe-input" placeholder="E-mail" id="subscribe-label">
+            <div class="form-flex">
+                <label hidden for="subscribe-label">
+                    <p class="subscribe-text">Subscribe</p>
+                </label>
+                <input type="email" name="email" class="subscribe-input" placeholder="E-mail" id="subscribe-label">
+                <button class="subscribe-button">
+                    Subscribe
+                    <svg class="send-icon-svg">
+                        <use href="./images/symbol-defs-upd.svg#icon-send-1"></use>
+                    </svg>
+                </button>  
+            </div>
         </form>
-        <button class="subscribe-button">Subscribe</button>
     </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-icon">
                     <use href="./images/symbol-defs-upd.svg#icon-Vector-1"></use>
                 </svg>
             </button>
+                <h2 class="modal-header">Leave your contacts and we will call you back</h2>
+            <form>
+                <label class="modal-label" for="user-name">Name</label>
+                    <input type="text" id="user-name" class="modal-input" name="name">
+                <label class="modal-label" for="user-tel">Phone</label>
+                    <input type="text" id="user-tel" class="modal-input" name="phone">
+                <label class="modal-label" for="user-email">Email</label>
+                    <input type="text" id="user-email" class="modal-input" name="email"> 
+                    
+                    <lable class="modal-label" for="comment-area">
+                        Comment
+                    </lable>
+                    <textarea class="modal-textarea" name="comment" id="comment-area" placeholder="Text input"></textarea>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
