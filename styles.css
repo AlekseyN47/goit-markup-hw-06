@@ -857,6 +857,13 @@ color: var(--interactive-elements);
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
+    padding: 11px 38px;
+}
+
+.modal-input-div {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .modal-input:focus {
@@ -867,6 +874,42 @@ color: var(--interactive-elements);
 .modal-textarea:focus {
     outline: none;
     border-color: #4D5AE5;
+}
+
+.modal-input-name-svg {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    margin-left: 19px;
+    fill: #2E2F42;
+}
+
+.modal-input-tel-svg {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    margin-left: 19px;
+    fill: #2E2F42;
+}
+
+.modal-input-email-svg {
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    margin-left: 19px;
+    fill: #2E2F42;
+}
+
+.modal-input:focus + .modal-input-name-svg {
+    fill: #4D5AE5;
+}
+
+.modal-input:focus + .modal-input-tel-svg {
+    fill: #4D5AE5;
+}
+
+.modal-input:focus + .modal-input-email-svg {
+    fill: #4D5AE5;
 }
 
 .modal-textarea {
@@ -898,4 +941,81 @@ color: var(--interactive-elements);
 
 .no-scroll {
     overflow: hidden;
+}
+
+.privacy-policy-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.04em;
+
+    color: #8E8F99;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.checkbox-box {
+    margin-top: 16px;
+}
+
+.privacy-policy {
+    color: #4D5AE5;
+}
+
+.privacy-policy-text span {
+
+}
+
+.privacy-policy-text::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms linear;
+    cursor: pointer;
+}
+
+.checkbox-input:checked + .privacy-policy-text::before {
+    background-color: #404BBF;
+    border: none;
+    background-image: url(./images/check-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 24px;
+
+    width: 169px;
+    height: 56px;
+
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    border: none;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+    cursor: pointer;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color: #404BBF;
 }

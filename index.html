@@ -390,26 +390,46 @@
         </form>
     </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-icon">
-                    <use href="./images/symbol-defs-upd.svg#icon-Vector-1"></use>
+                    <use href="./images/symbol-defs-upd.svg#icon-close-modal"></use>
                 </svg>
             </button>
                 <h2 class="modal-header">Leave your contacts and we will call you back</h2>
             <form>
                 <label class="modal-label" for="user-name">Name</label>
-                    <input type="text" id="user-name" class="modal-input" name="name">
+                    <div class="modal-input-div">
+                        <input type="text" id="user-name" class="modal-input" name="name">
+                        <svg class="modal-input-name-svg">
+                            <use href="./images/symbol-defs-upd.svg#icon-modal-name"></use>
+                        </svg>
+                    </div>
                 <label class="modal-label" for="user-tel">Phone</label>
-                    <input type="text" id="user-tel" class="modal-input" name="phone">
+                    <div class="modal-input-div">
+                        <input type="text" id="user-tel" class="modal-input" name="phone">
+                        <svg class="modal-input-tel-svg">
+                            <use href="./images/symbol-defs-upd.svg#icon-modal-tel"></use>
+                        </svg>
+                    </div>
                 <label class="modal-label" for="user-email">Email</label>
-                    <input type="text" id="user-email" class="modal-input" name="email"> 
+                    <div class="modal-input-div">
+                        <input type="text" id="user-email" class="modal-input" name="email"> 
+                        <svg class="modal-input-email-svg">
+                            <use href="./images/symbol-defs-upd.svg#icon-modal-email"></use>
+                        </svg>
+                    </div>
                     
                     <lable class="modal-label" for="comment-area">
                         Comment
                     </lable>
                     <textarea class="modal-textarea" name="comment" id="comment-area" placeholder="Text input"></textarea>
+                    <div class="checkbox-box">
+                        <input class="checkbox-input invisible" id="privacy-policy" type="checkbox">
+                        <label class="privacy-policy-text" for="privacy-policy">I accept the terms and conditions of the <a class="privacy-policy" href="">Privacy Policy</a></label>
+                        <button class="submit-button" type="submit">Send</button>
+                    </div>
             </form>
         </div>
     </div>
