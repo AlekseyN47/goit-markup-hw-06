@@ -163,7 +163,7 @@ color: #404BBF;
         rgba(46, 47, 66, 0.7)),
         url(images/people-office.jpg);
     
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 188px;
@@ -578,7 +578,7 @@ color: var(--interactive-elements);
 }
 
 .subscribe-form {
-    margin-left: 80px;
+    margin-left: auto;
 }
 
 .subscribe-text {
@@ -629,8 +629,6 @@ color: var(--interactive-elements);
     letter-spacing: 0.02em;
     line-height: 1.5;
     padding: 8px 24px;
-    width: 165px;
-    height: 40px;
     transition-duration: 250ms;
     transition-timing-function: linear;
     cursor: pointer;
@@ -924,6 +922,7 @@ color: var(--interactive-elements);
     border-radius: 4px;
     resize: none;
     padding: 8px 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .modal-textarea::placeholder {
@@ -1003,7 +1002,6 @@ color: var(--interactive-elements);
     margin-top: 24px;
 
     width: 169px;
-    height: 56px;
 
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
